@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+  padding: 12px;
+}
+
+/* Cabeçalho */
+header {
+  background: #0f172a;
+  color: #fff;
+  padding: 22px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Container centralizado */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Botões */
+.link-btn {
+  display: block;
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
+
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 16px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover */
+.link-btn:hover {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Instagram (cor diferente opcional) */
+.link-btn.instagram:hover {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+/* Responsivo para celular */
+@media (max-width: 480px) {
+  header {
+    padding: 18px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  .link-btn {
+    font-size: 15px;
+    padding: 14px;
+  }
+}

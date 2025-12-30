@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/png" href="img/logolr.png">
+
+  <title>LR Suplementos - Loja</title>
+  <link rel="stylesheet" href="whey.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>LR Suplementos</h1>
+  <nav>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<div id="cart" class="cart">
+  <h2>Carrinho</h2>
+  <ul id="cart-items"></ul>
+  <div class="cart-total">Total: R$ <span id="cart-total">0</span></div>
+  <button class="btn finalizar" onclick="finalizarCompra()">Finalizar compra</button>
+
+  <button class="btn fechar" onclick="toggleCart()">Fechar</button>
+</div>
+
+<button class="cart-toggle" onclick="toggleCart()">🛒</button>
+
+
+<main class="container">
+  <section class="products">
+
+    <div class="product">
+      <img src="wheyprobiotica.jpg" alt="Creatina Black Skull">
+      <h2>whey probiotica</h2>
+      <p>Aumento de força, explosão muscular e performance.</p>
+      <div class="price">R$ 200,00</div>
+      <button class="btn" onclick="addToCart('whey probiotica', 200)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="product">
+      <img src="wheygrowth.jpg" alt="Creatina Max Titanium">
+      <h2>whey growth</h2>
+      <p>Energia, força e ganho de massa muscular.</p>
+      <div class="price">R$ 580,00</div>
+      <button class="btn" onclick="addToCart('whey growth', 580)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="product">
+      <img src="whey-pro-max-titanium-1kg-chocolate-1.webp" alt="Creatina Probiótica">
+      <h2>whey pro max titanium 1kg chocolate</h2>
+      <p>Desempenho e força com alta pureza.</p>
+      <div class="price">R$ 400,00</div>
+      <button class="btn" onclick="addToCart('whey pro max titanium 1kg chocolate', 400)">Adicionar ao carrinho</button>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  © 2025 LR Suplementos • Loja Oficial
+</footer>
+
+<script src="../cart.js"></script>
+</body>
+</html>
